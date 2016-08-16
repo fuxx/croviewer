@@ -1,0 +1,858 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002F39FA09D0881F00EBEB88 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F39F909D0881F00EBEB88 /* SDL.framework */; };
+		002F3A0009D0884600EBEB88 /* SDL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F39F909D0881F00EBEB88 /* SDL.framework */; };
+		002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A2C09D0888800EBEB88 /* SDLMain.m */; };
+		002F3A3F09D088BA00EBEB88 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A3E09D088BA00EBEB88 /* main.cpp */; };
+		002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A503052C12A5AF6300A2E14D /* croartpreview.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A503052B12A5AF6300A2E14D /* croartpreview.cpp */; };
+		A503053012A5AF7F00A2E14D /* cropreviewimageregions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A503052F12A5AF7F00A2E14D /* cropreviewimageregions.cpp */; };
+		A503053412A5AFB100A2E14D /* cropreviewcontainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A503053312A5AFB100A2E14D /* cropreviewcontainer.cpp */; };
+		A503A7B8125D44CA005B3B4A /* croResources in Resources */ = {isa = PBXBuildFile; fileRef = A503A7B6125D44CA005B3B4A /* croResources */; };
+		A50FEACF12628FED001A3B0E /* croartistregions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A50FEACE12628FED001A3B0E /* croartistregions.cpp */; };
+		A50FECC51262A24E001A3B0E /* croartistartregions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A50FECC41262A24E001A3B0E /* croartistartregions.cpp */; };
+		A50FED0E1262AD68001A3B0E /* crostring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A50FED0D1262AD68001A3B0E /* crostring.cpp */; };
+		A510A4F212B53E0800B4BDBA /* cro-icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A510A4F112B53E0800B4BDBA /* cro-icon.icns */; };
+		A52FDD75125D11B30042FB72 /* crofile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A52FDD6A125D11B30042FB72 /* crofile.cpp */; };
+		A52FDD76125D11B30042FB72 /* cromusic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A52FDD6C125D11B30042FB72 /* cromusic.cpp */; };
+		A52FDD77125D11B30042FB72 /* crosurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A52FDD6E125D11B30042FB72 /* crosurface.cpp */; };
+		A52FDD79125D11B30042FB72 /* croviewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A52FDD72125D11B30042FB72 /* croviewer.cpp */; };
+		A52FDDB1125D197A0042FB72 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52FDDB0125D197A0042FB72 /* SDL_image.framework */; };
+		A546884512A86141004288B4 /* croloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A546884412A86141004288B4 /* croloader.cpp */; };
+		A55513E712C13E0300C931CA /* SDL_rotozoom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55513E512C13E0200C931CA /* SDL_rotozoom.cpp */; };
+		A55BBCBC1282068F009573AC /* cropreviewscrollbuttonregions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55BBCBB1282068F009573AC /* cropreviewscrollbuttonregions.cpp */; };
+		A56BF80312AC0E58008CFCE4 /* cromusicbuttonregions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A56BF80212AC0E58008CFCE4 /* cromusicbuttonregions.cpp */; };
+		A58657C4125F9CC0007B0559 /* crobuttonregions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A58657C3125F9CC0007B0559 /* crobuttonregions.cpp */; };
+		A589A57E12A7010D00A84AC4 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A589A57D12A7010D00A84AC4 /* libfmodex.dylib */; };
+		A5941F4C125D55BA00015C1B /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5941F4B125D55BA00015C1B /* libboost_filesystem.a */; };
+		A5941F50125D55CB00015C1B /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5941F4F125D55CB00015C1B /* libboost_system.a */; };
+		A5975495125E3D85004B8239 /* croregions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5975494125E3D85004B8239 /* croregions.cpp */; };
+		A5A5867B1269E27A00CF4B12 /* SDL_Bitmap_Font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5A5867A1269E27A00CF4B12 /* SDL_Bitmap_Font.cpp */; };
+		A5A58741126A691800CF4B12 /* croscrollbutton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5A58740126A691800CF4B12 /* croscrollbutton.cpp */; };
+		A5A58764126B49D800CF4B12 /* croscrollbuttonregions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5A58763126B49D800CF4B12 /* croscrollbuttonregions.cpp */; };
+		A5A58D9C126BBAB100CF4B12 /* croartviewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5A58D9B126BBAB100CF4B12 /* croartviewer.cpp */; };
+		A5E3126B1263A95400874788 /* crosoundendreceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5E3126A1263A95400874788 /* crosoundendreceiver.cpp */; };
+		A5EF1C2D125FEB6A00AE8BC6 /* croevents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5EF1C2C125FEB6A00AE8BC6 /* croevents.cpp */; };
+		A5EF1D28125FFBBB00AE8BC6 /* croinit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5EF1D27125FFBBB00AE8BC6 /* croinit.cpp */; };
+		A5F5828912A33B5B00FA3C53 /* SDL_image.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = A52FDDB0125D197A0042FB72 /* SDL_image.framework */; };
+		A5FDFE941261065100E7E2B4 /* cropositionprocessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5FDFE931261065100E7E2B4 /* cropositionprocessor.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		002F39FD09D0883400EBEB88 /* Copy Frameworks into .app bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5F5828912A33B5B00FA3C53 /* SDL_image.framework in Copy Frameworks into .app bundle */,
+				002F3A0009D0884600EBEB88 /* SDL.framework in Copy Frameworks into .app bundle */,
+			);
+			name = "Copy Frameworks into .app bundle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A503A7B5125D42DC005B3B4A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		002F39F909D0881F00EBEB88 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = /Library/Frameworks/SDL.framework; sourceTree = "<absolute>"; };
+		002F3A2B09D0888800EBEB88 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = SOURCE_ROOT; };
+		002F3A2C09D0888800EBEB88 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = SOURCE_ROOT; };
+		002F3A3E09D088BA00EBEB88 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		002F3C0009D093BD00EBEB88 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		002F3C6009D0951E00EBEB88 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../../../../../../System/Library/Frameworks/GLUT.framework; sourceTree = SOURCE_ROOT; };
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* croviewer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croviewer_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* croviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = croviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A500646312A9930100BAEC09 /* crowatermark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crowatermark.h; sourceTree = "<group>"; };
+		A503052B12A5AF6300A2E14D /* croartpreview.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = croartpreview.cpp; sourceTree = "<group>"; };
+		A503052F12A5AF7F00A2E14D /* cropreviewimageregions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cropreviewimageregions.cpp; sourceTree = "<group>"; };
+		A503053312A5AFB100A2E14D /* cropreviewcontainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cropreviewcontainer.cpp; sourceTree = "<group>"; };
+		A503A78B125D3E96005B3B4A /* SDL_Bitmap_Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDL_Bitmap_Font.h; sourceTree = "<group>"; };
+		A503A7B6125D44CA005B3B4A /* croResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = croResources; sourceTree = "<group>"; };
+		A50FEACD12628FED001A3B0E /* croartistregions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croartistregions.h; sourceTree = "<group>"; };
+		A50FEACE12628FED001A3B0E /* croartistregions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = croartistregions.cpp; sourceTree = "<group>"; };
+		A50FECC31262A24E001A3B0E /* croartistartregions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croartistartregions.h; sourceTree = "<group>"; };
+		A50FECC41262A24E001A3B0E /* croartistartregions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = croartistartregions.cpp; sourceTree = "<group>"; };
+		A50FED0C1262AD68001A3B0E /* crostring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crostring.h; sourceTree = "<group>"; };
+		A50FED0D1262AD68001A3B0E /* crostring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crostring.cpp; sourceTree = "<group>"; };
+		A510A4F112B53E0800B4BDBA /* cro-icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "cro-icon.icns"; sourceTree = "<group>"; };
+		A52ED7C1126CEA8C008D55D1 /* croartpreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croartpreview.h; sourceTree = "<group>"; };
+		A52ED7C5126CEAC8008D55D1 /* cropreviewcontainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cropreviewcontainer.h; sourceTree = "<group>"; };
+		A52FDD6A125D11B30042FB72 /* crofile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crofile.cpp; sourceTree = "<group>"; };
+		A52FDD6B125D11B30042FB72 /* crofile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crofile.h; sourceTree = "<group>"; };
+		A52FDD6C125D11B30042FB72 /* cromusic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cromusic.cpp; sourceTree = "<group>"; };
+		A52FDD6D125D11B30042FB72 /* cromusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cromusic.h; sourceTree = "<group>"; };
+		A52FDD6E125D11B30042FB72 /* crosurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crosurface.cpp; sourceTree = "<group>"; };
+		A52FDD6F125D11B30042FB72 /* crosurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crosurface.h; sourceTree = "<group>"; };
+		A52FDD71125D11B30042FB72 /* crotimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crotimer.h; sourceTree = "<group>"; };
+		A52FDD72125D11B30042FB72 /* croviewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = croviewer.cpp; sourceTree = "<group>"; usesTabs = 1; };
+		A52FDD73125D11B30042FB72 /* croviewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croviewer.h; sourceTree = "<group>"; };
+		A52FDDB0125D197A0042FB72 /* SDL_image.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; name = SDL_image.framework; path = Library/Frameworks/SDL_image.framework; sourceTree = SDKROOT; };
+		A52FDDB4125D19850042FB72 /* SDL_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_mixer.framework; path = Library/Frameworks/SDL_mixer.framework; sourceTree = SDKROOT; };
+		A546884312A86141004288B4 /* croloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croloader.h; sourceTree = "<group>"; };
+		A546884412A86141004288B4 /* croloader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = croloader.cpp; sourceTree = "<group>"; };
+		A55513E512C13E0200C931CA /* SDL_rotozoom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDL_rotozoom.cpp; sourceTree = "<group>"; };
+		A55513E612C13E0200C931CA /* SDL_rotozoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDL_rotozoom.h; sourceTree = "<group>"; };
+		A55BBCBA1282068F009573AC /* cropreviewscrollbuttonregions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cropreviewscrollbuttonregions.h; sourceTree = "<group>"; };
+		A55BBCBB1282068F009573AC /* cropreviewscrollbuttonregions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cropreviewscrollbuttonregions.cpp; sourceTree = "<group>"; };
+		A56BF80112AC0E58008CFCE4 /* cromusicbuttonregions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cromusicbuttonregions.h; sourceTree = "<group>"; };
+		A56BF80212AC0E58008CFCE4 /* cromusicbuttonregions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cromusicbuttonregions.cpp; sourceTree = "<group>"; };
+		A58657C2125F9CC0007B0559 /* crobuttonregions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crobuttonregions.h; sourceTree = "<group>"; };
+		A58657C3125F9CC0007B0559 /* crobuttonregions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crobuttonregions.cpp; sourceTree = "<group>"; };
+		A586590E125FB57C007B0559 /* croglobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croglobal.h; sourceTree = "<group>"; };
+		A589A57D12A7010D00A84AC4 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = "FMOD Programmers API Mac/api/lib/libfmodex.dylib"; sourceTree = DEVELOPER_DIR; };
+		A59059B8126E283000860080 /* cropreviewimageregions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cropreviewimageregions.h; sourceTree = "<group>"; };
+		A5941F4B125D55BA00015C1B /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = /opt/local/lib/libboost_filesystem.a; sourceTree = "<absolute>"; };
+		A5941F4F125D55CB00015C1B /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = /opt/local/lib/libboost_system.a; sourceTree = "<absolute>"; };
+		A5975493125E3D85004B8239 /* croregions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croregions.h; sourceTree = "<group>"; };
+		A5975494125E3D85004B8239 /* croregions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = croregions.cpp; sourceTree = "<group>"; };
+		A5A5867A1269E27A00CF4B12 /* SDL_Bitmap_Font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDL_Bitmap_Font.cpp; sourceTree = "<group>"; };
+		A5A5873F126A691800CF4B12 /* croscrollbutton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croscrollbutton.h; sourceTree = "<group>"; };
+		A5A58740126A691800CF4B12 /* croscrollbutton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = croscrollbutton.cpp; sourceTree = "<group>"; };
+		A5A58762126B49D800CF4B12 /* croscrollbuttonregions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croscrollbuttonregions.h; sourceTree = "<group>"; };
+		A5A58763126B49D800CF4B12 /* croscrollbuttonregions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = croscrollbuttonregions.cpp; sourceTree = "<group>"; };
+		A5A58D9A126BBAB100CF4B12 /* croartviewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croartviewer.h; sourceTree = "<group>"; };
+		A5A58D9B126BBAB100CF4B12 /* croartviewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = croartviewer.cpp; sourceTree = "<group>"; };
+		A5E312691263A95400874788 /* crosoundendreceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crosoundendreceiver.h; sourceTree = "<group>"; };
+		A5E3126A1263A95400874788 /* crosoundendreceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crosoundendreceiver.cpp; sourceTree = "<group>"; };
+		A5EF1C2B125FEB6A00AE8BC6 /* croevents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croevents.h; sourceTree = "<group>"; };
+		A5EF1C2C125FEB6A00AE8BC6 /* croevents.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = croevents.cpp; sourceTree = "<group>"; };
+		A5EF1D26125FFBBB00AE8BC6 /* croinit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croinit.h; sourceTree = "<group>"; };
+		A5EF1D27125FFBBB00AE8BC6 /* croinit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = croinit.cpp; sourceTree = "<group>"; };
+		A5FDFE921261065100E7E2B4 /* cropositionprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cropositionprocessor.h; sourceTree = "<group>"; };
+		A5FDFE931261065100E7E2B4 /* cropositionprocessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cropositionprocessor.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52FDDB1125D197A0042FB72 /* SDL_image.framework in Frameworks */,
+				002F39FA09D0881F00EBEB88 /* SDL.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */,
+				A5941F4C125D55BA00015C1B /* libboost_filesystem.a in Frameworks */,
+				A5941F50125D55CB00015C1B /* libboost_system.a in Frameworks */,
+				A589A57E12A7010D00A84AC4 /* libfmodex.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A52FDD65125D11970042FB72 /* cro */,
+				A52ED7C3126CEAAC008D55D1 /* container */,
+				A5CC61C412621B0B000A3239 /* region */,
+				A5EF1C2A125FEB5900AE8BC6 /* events */,
+				A5865806125F9FD7007B0559 /* base */,
+				A5865805125F9FCC007B0559 /* graphic */,
+				A5865804125F9FBF007B0559 /* sound */,
+				A503A797125D40C1005B3B4A /* header */,
+				32CA4F630368D1EE00C91783 /* croviewer_Prefix.pch */,
+				002F3A3E09D088BA00EBEB88 /* main.cpp */,
+				002F3A2B09D0888800EBEB88 /* SDLMain.h */,
+				002F3A2C09D0888800EBEB88 /* SDLMain.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A52FDDB0125D197A0042FB72 /* SDL_image.framework */,
+				002F39F909D0881F00EBEB88 /* SDL.framework */,
+				002F3C6009D0951E00EBEB88 /* GLUT.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				002F3C0009D093BD00EBEB88 /* OpenGL.framework */,
+				A52FDDB4125D19850042FB72 /* SDL_mixer.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* croviewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* croviewer */ = {
+			isa = PBXGroup;
+			children = (
+				A503A6DD125D3416005B3B4A /* Library */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = croviewer;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A510A4F112B53E0800B4BDBA /* cro-icon.icns */,
+				A503A7B6125D44CA005B3B4A /* croResources */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A503A6DD125D3416005B3B4A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A55513E512C13E0200C931CA /* SDL_rotozoom.cpp */,
+				A55513E612C13E0200C931CA /* SDL_rotozoom.h */,
+				A589A57D12A7010D00A84AC4 /* libfmodex.dylib */,
+				A5941E51125D4ADB00015C1B /* boost */,
+				A503A73F125D3C90005B3B4A /* sdlBitmapFont */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		A503A73F125D3C90005B3B4A /* sdlBitmapFont */ = {
+			isa = PBXGroup;
+			children = (
+				A503A78B125D3E96005B3B4A /* SDL_Bitmap_Font.h */,
+				A5A5867A1269E27A00CF4B12 /* SDL_Bitmap_Font.cpp */,
+			);
+			name = sdlBitmapFont;
+			sourceTree = "<group>";
+		};
+		A503A797125D40C1005B3B4A /* header */ = {
+			isa = PBXGroup;
+			children = (
+				A52FDD71125D11B30042FB72 /* crotimer.h */,
+				A500646312A9930100BAEC09 /* crowatermark.h */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
+		A50FE62512625C43001A3B0E /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				A5E312691263A95400874788 /* crosoundendreceiver.h */,
+				A5E3126A1263A95400874788 /* crosoundendreceiver.cpp */,
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
+		A50FE62612625C49001A3B0E /* graphic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = graphic;
+			sourceTree = "<group>";
+		};
+		A52ED7C3126CEAAC008D55D1 /* container */ = {
+			isa = PBXGroup;
+			children = (
+				A503053312A5AFB100A2E14D /* cropreviewcontainer.cpp */,
+				A52ED7C7126CEACD008D55D1 /* header */,
+			);
+			name = container;
+			sourceTree = "<group>";
+		};
+		A52ED7C7126CEACD008D55D1 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				A52ED7C5126CEAC8008D55D1 /* cropreviewcontainer.h */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
+		A52FDD65125D11970042FB72 /* cro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = cro;
+			sourceTree = "<group>";
+		};
+		A5865804125F9FBF007B0559 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				A52FDD6C125D11B30042FB72 /* cromusic.cpp */,
+				A5865809125F9FEF007B0559 /* header */,
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
+		A5865805125F9FCC007B0559 /* graphic */ = {
+			isa = PBXGroup;
+			children = (
+				A503052B12A5AF6300A2E14D /* croartpreview.cpp */,
+				A52FDD72125D11B30042FB72 /* croviewer.cpp */,
+				A52FDD6E125D11B30042FB72 /* crosurface.cpp */,
+				A5865808125F9FE6007B0559 /* header */,
+				A5A58740126A691800CF4B12 /* croscrollbutton.cpp */,
+				A5A58D9B126BBAB100CF4B12 /* croartviewer.cpp */,
+				A546884312A86141004288B4 /* croloader.h */,
+				A546884412A86141004288B4 /* croloader.cpp */,
+			);
+			name = graphic;
+			sourceTree = "<group>";
+		};
+		A5865806125F9FD7007B0559 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				A52FDD6A125D11B30042FB72 /* crofile.cpp */,
+				A5865807125F9FE0007B0559 /* header */,
+				A5EF1D27125FFBBB00AE8BC6 /* croinit.cpp */,
+				A5FDFE931261065100E7E2B4 /* cropositionprocessor.cpp */,
+				A50FED0D1262AD68001A3B0E /* crostring.cpp */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		A5865807125F9FE0007B0559 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				A5FDFE921261065100E7E2B4 /* cropositionprocessor.h */,
+				A50FED0C1262AD68001A3B0E /* crostring.h */,
+				A5EF1D26125FFBBB00AE8BC6 /* croinit.h */,
+				A52FDD6B125D11B30042FB72 /* crofile.h */,
+				A586590E125FB57C007B0559 /* croglobal.h */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
+		A5865808125F9FE6007B0559 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				A52ED7C1126CEA8C008D55D1 /* croartpreview.h */,
+				A5A58D9A126BBAB100CF4B12 /* croartviewer.h */,
+				A5A5873F126A691800CF4B12 /* croscrollbutton.h */,
+				A52FDD73125D11B30042FB72 /* croviewer.h */,
+				A52FDD6F125D11B30042FB72 /* crosurface.h */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
+		A5865809125F9FEF007B0559 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				A52FDD6D125D11B30042FB72 /* cromusic.h */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
+		A5941E51125D4ADB00015C1B /* boost */ = {
+			isa = PBXGroup;
+			children = (
+				A5941F4B125D55BA00015C1B /* libboost_filesystem.a */,
+				A5941F4F125D55CB00015C1B /* libboost_system.a */,
+			);
+			name = boost;
+			sourceTree = "<group>";
+		};
+		A5CC61C412621B0B000A3239 /* region */ = {
+			isa = PBXGroup;
+			children = (
+				A503052F12A5AF7F00A2E14D /* cropreviewimageregions.cpp */,
+				A5CC61C512621B65000A3239 /* header */,
+				A5975494125E3D85004B8239 /* croregions.cpp */,
+				A58657C3125F9CC0007B0559 /* crobuttonregions.cpp */,
+				A50FEACE12628FED001A3B0E /* croartistregions.cpp */,
+				A50FECC41262A24E001A3B0E /* croartistartregions.cpp */,
+				A5A58763126B49D800CF4B12 /* croscrollbuttonregions.cpp */,
+				A55BBCBB1282068F009573AC /* cropreviewscrollbuttonregions.cpp */,
+				A56BF80212AC0E58008CFCE4 /* cromusicbuttonregions.cpp */,
+			);
+			name = region;
+			sourceTree = "<group>";
+		};
+		A5CC61C512621B65000A3239 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				A56BF80112AC0E58008CFCE4 /* cromusicbuttonregions.h */,
+				A55BBCBA1282068F009573AC /* cropreviewscrollbuttonregions.h */,
+				A50FECC31262A24E001A3B0E /* croartistartregions.h */,
+				A59059B8126E283000860080 /* cropreviewimageregions.h */,
+				A5A58762126B49D800CF4B12 /* croscrollbuttonregions.h */,
+				A50FEACD12628FED001A3B0E /* croartistregions.h */,
+				A58657C2125F9CC0007B0559 /* crobuttonregions.h */,
+				A5975493125E3D85004B8239 /* croregions.h */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
+		A5EF1C2A125FEB5900AE8BC6 /* events */ = {
+			isa = PBXGroup;
+			children = (
+				A50FE62612625C49001A3B0E /* graphic */,
+				A50FE62512625C43001A3B0E /* sound */,
+				A5EF1C2E125FEB7200AE8BC6 /* header */,
+				A5EF1C2C125FEB6A00AE8BC6 /* croevents.cpp */,
+			);
+			name = events;
+			sourceTree = "<group>";
+		};
+		A5EF1C2E125FEB7200AE8BC6 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				A5EF1C2B125FEB6A00AE8BC6 /* croevents.h */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* croviewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "croviewer" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				002F39FD09D0883400EBEB88 /* Copy Frameworks into .app bundle */,
+				A503A7B5125D42DC005B3B4A /* CopyFiles */,
+				A5941FD1125D5D5D00015C1B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = croviewer;
+			productInstallPath = "$(HOME)/Applications";
+			productName = croviewer;
+			productReference = 8D1107320486CEB800E47090 /* croviewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "chemical-reaction.org";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "croviewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* croviewer */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* croviewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				A503A7B8125D44CA005B3B4A /* croResources in Resources */,
+				A510A4F212B53E0800B4BDBA /* cro-icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5941FD1125D5D5D00015C1B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -f \"/opt/libfmodex.dylib\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/libfmodex.dylib\"\ninstall_name_tool -change ./libfmodex.dylib @loader_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */,
+				002F3A3F09D088BA00EBEB88 /* main.cpp in Sources */,
+				A52FDD75125D11B30042FB72 /* crofile.cpp in Sources */,
+				A52FDD76125D11B30042FB72 /* cromusic.cpp in Sources */,
+				A52FDD77125D11B30042FB72 /* crosurface.cpp in Sources */,
+				A52FDD79125D11B30042FB72 /* croviewer.cpp in Sources */,
+				A5975495125E3D85004B8239 /* croregions.cpp in Sources */,
+				A58657C4125F9CC0007B0559 /* crobuttonregions.cpp in Sources */,
+				A5EF1C2D125FEB6A00AE8BC6 /* croevents.cpp in Sources */,
+				A5EF1D28125FFBBB00AE8BC6 /* croinit.cpp in Sources */,
+				A5FDFE941261065100E7E2B4 /* cropositionprocessor.cpp in Sources */,
+				A50FEACF12628FED001A3B0E /* croartistregions.cpp in Sources */,
+				A50FECC51262A24E001A3B0E /* croartistartregions.cpp in Sources */,
+				A50FED0E1262AD68001A3B0E /* crostring.cpp in Sources */,
+				A5E3126B1263A95400874788 /* crosoundendreceiver.cpp in Sources */,
+				A5A5867B1269E27A00CF4B12 /* SDL_Bitmap_Font.cpp in Sources */,
+				A5A58741126A691800CF4B12 /* croscrollbutton.cpp in Sources */,
+				A5A58764126B49D800CF4B12 /* croscrollbuttonregions.cpp in Sources */,
+				A5A58D9C126BBAB100CF4B12 /* croartviewer.cpp in Sources */,
+				A55BBCBC1282068F009573AC /* cropreviewscrollbuttonregions.cpp in Sources */,
+				A503052C12A5AF6300A2E14D /* croartpreview.cpp in Sources */,
+				A503053012A5AF7F00A2E14D /* cropreviewimageregions.cpp in Sources */,
+				A503053412A5AFB100A2E14D /* cropreviewcontainer.cpp in Sources */,
+				A546884512A86141004288B4 /* croloader.cpp in Sources */,
+				A56BF80312AC0E58008CFCE4 /* cromusicbuttonregions.cpp in Sources */,
+				A55513E712C13E0300C931CA /* SDL_rotozoom.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A51BB89112BEA3D100FE0967 /* Debug PPC */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_VERSION = 4.0;
+				"GCC_VERSION[arch=i386]" = 4.0;
+				"GCC_VERSION[arch=ppc64]" = 4.0;
+				"GCC_VERSION[arch=ppc]" = 4.0;
+				"GCC_VERSION[arch=x86_64]" = 4.0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Developer/FMOD Programmers API Mac/fmoddesignerapi/api/inc\"",
+					"\"/Developer/FMOD Programmers API Mac/examples/common\"",
+					"\"/Developer/FMOD Programmers API Mac/api/inc\"",
+					/Library/Frameworks/SDL.framework/Headers,
+					/Library/Frameworks/SDL_image.framework/Headers,
+					/opt/boost/include,
+					"${SOURCE_ROOT}",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Developer/FMOD Programmers API Mac/fmoddesignerapi/api/lib\"",
+					$SRCROOT,
+					/opt/boost/lib,
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-L/opt/local/lib",
+					"-Wl",
+					"-search_paths_first",
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				"SDKROOT[arch=x86_64]" = macosx10.5;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
+				VALID_ARCHS = "ppc970 ppc7400 ppc";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_LDFLAGS = "-no_arch_warnings";
+			};
+			name = "Debug PPC";
+		};
+		A51BB89212BEA3D100FE0967 /* Debug PPC */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Library/Frameworks/**",
+					"$(FRAMEWORK_SEARCH_PATHS)/**",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = croviewer_Prefix.pch;
+				"GCC_VERSION[arch=ppc64]" = 4.0;
+				"GCC_VERSION[arch=x86_64]" = 4.0;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks/SDL.framework/Headers",
+					"/Library/Frameworks/SDL_image.framework/Headers/**",
+					"/Library/Frameworks/SDL.framework/Headers/**",
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Developer/FMOD Programmers API Mac/fmoddesignerapi/api/lib\"",
+					"\"$(SRCROOT)\"",
+					/opt/boost/lib,
+					"\"$(SRCROOT)/../sdl_bitmap_font/build/Release\"",
+					"\"$(SRCROOT)/../sdl_bitmap/build/Debug\"",
+					"\"$(SRCROOT)/../sdl_bitmap/build/Release\"",
+					"\"$(DEVELOPER_DIR)/FMOD Programmers API Mac/api/lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl",
+					"-search_paths_first",
+				);
+				PRODUCT_NAME = CroViewer;
+				"SDKROOT[arch=x86_64]" = macosx10.5;
+				VALID_ARCHS = "ppc7400 ppc970 ppc";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_BUILDER = Isha;
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Debug PPC";
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Library/Frameworks/**",
+					"$(FRAMEWORK_SEARCH_PATHS)/**",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = croviewer_Prefix.pch;
+				"GCC_VERSION[arch=ppc64]" = 4.0;
+				"GCC_VERSION[arch=x86_64]" = 4.0;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks/SDL.framework/Headers",
+					"/Library/Frameworks/SDL_image.framework/Headers/**",
+					"/Library/Frameworks/SDL.framework/Headers/**",
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Developer/FMOD Programmers API Mac/fmoddesignerapi/api/lib\"",
+					"\"$(SRCROOT)\"",
+					/opt/boost/lib,
+					"\"$(SRCROOT)/../sdl_bitmap_font/build/Release\"",
+					"\"$(SRCROOT)/../sdl_bitmap/build/Debug\"",
+					"\"$(SRCROOT)/../sdl_bitmap/build/Release\"",
+					"\"$(DEVELOPER_DIR)/FMOD Programmers API Mac/api/lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl",
+					"-search_paths_first",
+				);
+				PRODUCT_NAME = CroViewer;
+				"SDKROOT[arch=x86_64]" = macosx10.5;
+				VALID_ARCHS = "ppc7400 ppc970 ppc i386";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_BUILDER = Isha;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = croviewer_Prefix.pch;
+				"GCC_VERSION[arch=i386]" = 4.2;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					/opt/boost/lib,
+					"\"$(SRCROOT)/../sdl_bitmap_font/build/Release\"",
+					"\"$(SRCROOT)/../sdl_bitmap/build/Debug\"",
+					"\"$(SRCROOT)/../sdl_bitmap/build/Release\"",
+					"\"$(DEVELOPER_DIR)/FMOD Programmers API Mac/fmoddesignerapi/api/lib\"",
+					"\"$(DEVELOPER_DIR)/FMOD Programmers API Mac/api/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = croviewer;
+				VALID_ARCHS = "ppc ppc7400 ppc970 i386";
+				VERSION_INFO_BUILDER = Isha;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_VERSION = 4.0;
+				"GCC_VERSION[arch=i386]" = 4.0;
+				"GCC_VERSION[arch=ppc64]" = 4.0;
+				"GCC_VERSION[arch=ppc]" = 4.0;
+				"GCC_VERSION[arch=x86_64]" = 4.0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Developer/FMOD Programmers API Mac/fmoddesignerapi/api/inc\"",
+					"\"/Developer/FMOD Programmers API Mac/examples/common\"",
+					"\"/Developer/FMOD Programmers API Mac/api/inc\"",
+					/Library/Frameworks/SDL.framework/Headers,
+					/Library/Frameworks/SDL_image.framework/Headers,
+					/opt/boost/include,
+					"${SOURCE_ROOT}",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Developer/FMOD Programmers API Mac/fmoddesignerapi/api/lib\"",
+					$SRCROOT,
+					/opt/boost/lib,
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-L/opt/local/lib",
+					"-Wl",
+					"-search_paths_first",
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				"SDKROOT[arch=x86_64]" = macosx10.5;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
+				VALID_ARCHS = "ppc970 ppc7400 ppc i386";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_LDFLAGS = "-no_arch_warnings";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_MODEL_TUNING = "";
+				GCC_VERSION = 4.0;
+				"GCC_VERSION[arch=i386]" = 4.0;
+				"GCC_VERSION[arch=ppc64]" = 4.0;
+				"GCC_VERSION[arch=ppc]" = 4.0;
+				"GCC_VERSION[arch=x86_64]" = 4.0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Developer/FMOD Programmers API Mac/examples/common\"",
+					"\"/Developer/FMOD Programmers API Mac/fmoddesignerapi/api/inc\"",
+					"\"/Developer/FMOD Programmers API Mac/api/inc\"",
+					/Library/Frameworks/SDL.framework/Headers,
+					/Library/Frameworks/SDL_image.framework/Headers,
+					/opt/boost/include,
+					"${SOURCE_ROOT}",
+				);
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-Wl,-search_paths_first";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				"SDKROOT[arch=x86_64]" = macosx10.5;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				VALID_ARCHS = "ppc7400 ppc970 ppc i386";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "croviewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				A51BB89212BEA3D100FE0967 /* Debug PPC */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "croviewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				A51BB89112BEA3D100FE0967 /* Debug PPC */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
